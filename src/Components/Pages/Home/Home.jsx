@@ -1,9 +1,10 @@
+import Header from "./Header";
 
 
 const Home = () => {
     return (
         <div className="">
-            This is for home
+            <Header></Header>
         </div>
     );
 };
