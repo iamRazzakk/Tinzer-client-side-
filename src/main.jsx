@@ -6,9 +6,9 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={myCreateRouter}>
-      <div className='font-Poppins'>
-      </div>
-    </RouterProvider>
+    <div className='font-Poppins '>
+      <RouterProvider router={myCreateRouter}>
+      </RouterProvider>
+    </div>
   </React.StrictMode >
 )

@@ -8,6 +8,8 @@ import { Navigation } from 'swiper/modules';
 import image1 from '../../../assets/Picture/hero-img-1.jpg'
 import image2 from '../../../assets/Picture/hero-img-8.jpg'
 import image3 from '../../../assets/Picture/hero-img-9.jpg'
+import { FaHeadset } from "react-icons/fa";
+
 
 const Header = () => {
     return (
@@ -34,9 +36,9 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex-1">
-                            <img className='h-[100vh] rounded-2xl md:pt-10' src={image1} alt="" />
+                            <img className='h-[80vh] rounded-2xl md:pt-10' src={image1} alt="" />
                             <div className="flex">
-                                
+
                             </div>
                         </div>
                     </div>
@@ -87,7 +89,29 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex-1">
-                            <img className='h-[80vh] rounded-2xl md:pt-10' src={image3} alt="" />
+                            <img className='relative h-[80vh] rounded-2xl md:pt-10' src={image3} alt="" />
+                            <div className="flex items-center justify-evenly absolute text-white">
+                                <div className=' md:-mt-24 rounded-lg bg-[#191919] w-52 h-36'>
+                                    <div className=' lg:mb-6 w-28 h-28 '>
+                                        <FaHeadset className='flex bg-[#2490eb] rounded-full text-white p-1 items-center text-3xl text-center lg:ml-20 justify-center'></FaHeadset>
+                                    </div>
+                                    <div className='text-center mt-6 relative text-white p-4'>
+                                        <h1 className="text-xl font-bold">24/7 Support</h1>
+                                        <p>There are many variations of passages are valid</p>
+                                    </div>
+                                </div>
+
+                                {/* Qulified Doctor */}
+                                <div className=' md:-mt-24 rounded-lg bg-[#191919] w-52 h-32'>
+                                    <div className=' lg:mb-6 w-28 h-28 '>
+                                        <FaHeadset className='flex bg-[#2490eb] rounded-full text-white p-1 items-center text-3xl text-center lg:ml-20 justify-center'></FaHeadset>
+                                    </div>
+                                    <div className='text-center mt-6 relative text-white p-4'>
+                                        <h1 className="text-xl font-bold">24/7 Support</h1>
+                                        <p>There are many variations of passages are valid</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </SwiperSlide>
