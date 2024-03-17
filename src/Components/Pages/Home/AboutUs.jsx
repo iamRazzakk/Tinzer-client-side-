@@ -1,30 +1,31 @@
+import image from '../../../assets/Picture/image4 (1).jpg'
+import { FaUserDoctor } from "react-icons/fa6";
+import { FaUserAstronaut } from "react-icons/fa6";
+import { FaHandsWash } from "react-icons/fa";
+import { PiUsersThreeBold } from "react-icons/pi";
+import { FcReading } from "react-icons/fc";
+
 import { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import { FaPlayCircle } from "react-icons/fa";
-import { FaUserDoctor, FaUserAstronaut, FaHandsWash } from "react-icons/fa";
-import { PiUsersThreeBold } from "react-icons/pi";
-import { FcReading } from "react-icons/fc";
 import { LuDna } from "react-icons/lu";
-import '../../utility/About.css';
-
+import '../../utility/About.css'
 const AboutUs = () => {
     const [isOpen, setOpen] = useState(false);
-    
     return (
-        <div className="md:flex bg-black justify-center">
-            <div className='flex-1'>
+        <div className="md:flex bg-black  justify-center">
+            <div className='flex-1 '>
                 <ModalVideo
                     channel="youtube"
                     youtube={{ mute: 0, autoplay: 0 }}
                     isOpen={isOpen}
                     videoId="L61p2uyiMSo"
                     onClose={() => setOpen(false)}
-                    className="modal-video"
                 />
-                <div className='relative h-full w-full rounded-lg object-cover'>
-                    {/* Play button for the YouTube video */}
-                    <FaPlayCircle className='absolute inset-0 m-auto text-7xl font-bold bg-white cursor-pointer' onClick={() => setOpen(true)}></FaPlayCircle>
+                <div className='p-6 '>
+                    <img className='relative h-full w-full rounded-xl' src={image} alt="" />
                 </div>
+                <FaPlayCircle className='absolute lg:ml-64 rounded-full  lg:-mt-64 text-7xl font-bold bg-white' onClick={() => setOpen(true)}></FaPlayCircle>
             </div>
             <div className='flex-1 space-y-4 text-white lg:py-10 lg:px-4'>
                 <h1 className='text-[#207ef7]'>About Us</h1>
@@ -59,6 +60,8 @@ const AboutUs = () => {
                         <h3 className='text-xl text'> Stay at Home</h3>
                     </div>
                 </div>
+
+
             </div>
         </div>
     );

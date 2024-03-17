@@ -1,4 +1,6 @@
-
+.gridHover{
+    transition: 0.8s;
+}
 .gridHover:hover {
     background-color: #207EF7;
     color: white;

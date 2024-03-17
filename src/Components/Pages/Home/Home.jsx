@@ -1,5 +1,7 @@
 import AboutUs from "./AboutUs";
 import Header from "./Header";
+import OurService from "./OurService";
+import PatientDetail from "./PatientDetail";
 
 
 const Home = () => {
@@ -7,6 +9,8 @@ const Home = () => {
         <div className="">
             <Header></Header>
             <AboutUs></AboutUs>
+            <PatientDetail></PatientDetail>
+            <OurService></OurService>
         </div>
     );
 };
