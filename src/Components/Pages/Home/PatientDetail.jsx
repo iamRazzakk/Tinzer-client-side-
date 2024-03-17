@@ -1,15 +1,15 @@
 /* eslint-disable react/prop-types */
 
 import CountUp from 'react-countup';
-import '../../utility/About.css'
+import '../../utility/PatientDetails.css'
 
 const CountUpCard = ({ startNumber, endNumber, prefix }) => {
     const formatNumber = (number) => {
         return number + " " + '+'
     }
     return (
-        <div data-aos="fade-down" className=" md:mt-12 bg-[#07092B] gridHover p-4 rounded-lg shadow-md text-white text-center">
-            <div className="text-4xl mb-2 font-bold">
+        <div data-aos="fade-down" className=" md:mt-12 bg-[#07092B]  p-4 rounded-lg shadow-md text-white text-center PatientDetails">
+            <div className="text-4xl mb-2 font-bold ">
                 <CountUp
                     start={startNumber}
                     end={endNumber}

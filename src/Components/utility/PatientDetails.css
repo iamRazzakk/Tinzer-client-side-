@@ -1,14 +1,9 @@
-.gridHover {
+.PatientDetails {
     background: linear-gradient(to top, #207EF7 50%, transparent 50%);
     background-size: 100% 200%;
     transition: background-position 0.8s;
 }
 
-.gridHover:hover {
+.PatientDetails:hover {
     background-position: 0 100%;
-}
-
-.gridHover:hover button {
-    color: white;
-
 }
