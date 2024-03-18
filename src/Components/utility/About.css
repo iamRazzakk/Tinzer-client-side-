@@ -12,3 +12,9 @@
     color: white;
 
 }
+
+.bg-size {
+    height: 600px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
