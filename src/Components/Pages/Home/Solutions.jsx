@@ -8,7 +8,7 @@ import { useState } from "react";
 const Solutions = () => {
     const [startDate, setStartDate] = useState(new Date());
     return (
-        <div className="lg:flex items-center justify-center">
+        <div className="lg:flex items-center bg-black justify-center">
             <div className="flex-1 lg:p-16 text-white">
                 <div className="space-y-3">
                     <h6>Best Solutions</h6>

@@ -8,11 +8,11 @@ const Doctors = () => {
     return (
         <div className="bg-black text-white">
             <div className=" text-center lg:pt-32 space-y-4">
-                <h6 className="">Our Services</h6>
-                <h1 className="text-5xl font-bold">Our Healthcare Services</h1>
-                <p>Our comprehensive healthcare services encompass a wide range of specialties and treatments.</p>
+                <h6 className="">Our Doctors</h6>
+                <h1 className="text-5xl font-bold">Specialized Doctors</h1>
+                <p>Access specialized doctors remotely, ensuring tailored care and expert guidance for your health needs.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4 lg:mt-16 lg:px-10 w-full m-auto border border-red-500 justify-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4 lg:mt-16 lg:px-10 w-full m-autojustify-items-center">
                 <div className='cardFull img-container'>
                     <img className='h-[367px] card-imgg' src={doctor1} alt="" />
                     <h1 className='text-2xl font-bold'>Dr. James Adult</h1>

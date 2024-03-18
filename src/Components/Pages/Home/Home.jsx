@@ -6,6 +6,7 @@ import Header from "./Header";
 import OurService from "./OurService";
 import PatientDetail from "./PatientDetail";
 import Solutions from "./Solutions";
+import Testimonial from "./Testimonial";
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
             </div>
             <Solutions></Solutions>
             <ChooseUs></ChooseUs>
+            <Testimonial></Testimonial>
         </div>
     );
 };
