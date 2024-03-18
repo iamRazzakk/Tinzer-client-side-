@@ -7,10 +7,10 @@ export default {
         Poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        primary: "#07092B", 
-        secondary: "#207EF7", 
+        primary: "#07092B",
+        secondary: "#207EF7",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

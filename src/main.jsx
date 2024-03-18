@@ -6,7 +6,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='font-Poppins '>
+    <div className='font-Poppins'>
       <RouterProvider router={myCreateRouter}>
       </RouterProvider>
     </div>
