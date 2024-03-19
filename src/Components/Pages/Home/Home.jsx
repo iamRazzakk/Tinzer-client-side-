@@ -5,6 +5,7 @@ import FAQ from "./FAQ";
 import Header from "./Header";
 import OurService from "./OurService";
 import PatientDetail from "./PatientDetail";
+import PricingPlan from "./PricingPlan";
 import Solutions from "./Solutions";
 import Testimonial from "./Testimonial";
 
@@ -23,6 +24,7 @@ const Home = () => {
             <Solutions></Solutions>
             <ChooseUs></ChooseUs>
             <Testimonial></Testimonial>
+            <PricingPlan></PricingPlan>
         </div>
     );
 };
