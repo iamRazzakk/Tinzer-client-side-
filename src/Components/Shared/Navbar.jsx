@@ -1,6 +1,6 @@
 import { FaHeadphones, FaPhone, FaLocationArrow } from "react-icons/fa6";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
-import './Navbar.css'
+import '../utility/Navbar.css'
 import { Link } from 'react-router-dom'
 
 
