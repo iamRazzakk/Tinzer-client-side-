@@ -29,8 +29,12 @@ const Navbar = () => {
                         <FaFacebook className="bg-white rounded-full w-5 h-5"></FaFacebook>
                         <FaTwitter className="bg-white rounded-full w-5 h-5"></FaTwitter>
                         <FaLinkedin className="bg-white rounded-full w-5 h-5"></FaLinkedin>
-                        <button className="text-white">Sing In</button>
-                        <button className="bg-white text-[#07092b] p-2 rounded-xl text-sm font-bold">Sing Up</button>
+                        <Link to='/sing-in'>
+                            <button className="text-white">Sing In</button>
+                        </Link>
+                        <Link to='/sing-up'>
+                            <button className="bg-white text-[#07092b] p-2 rounded-xl text-sm font-bold">Sing Up</button>
+                        </Link>
                     </div>
                 </div>
             </div>
