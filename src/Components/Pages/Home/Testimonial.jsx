@@ -78,6 +78,6 @@ const Testimonial = () => {
             </Swiper>
         </div>
     );
-};
+};  
 
 export default Testimonial;
