@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { AuthContext } from './../Shared/AuthProvider';
 import { GoogleAuthProvider } from "firebase/auth";
 import auth from "../utility/Firebase/Firebase.config";
+import { Swal } from 'sweetalert2';
 
 export default function SingInForm() {
     const { loginWithGoogle, signIn } = useContext(AuthContext)

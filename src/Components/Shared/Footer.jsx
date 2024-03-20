@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div>
             <footer className="footer bg-primary p-10 text-white">
-                <aside>
+                <aside className="lg:p-4">
                     <h1 className="text-3xl font-bold">Tinzer</h1>
                     <p>Md Abdur Razzak Ltd.</p>
                     <p>Providing reliable tech since 1992</p>

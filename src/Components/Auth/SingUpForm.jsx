@@ -1,52 +1,67 @@
 
 import { Link, useNavigate } from 'react-router-dom';
-import Swal from 'sweetalert2'
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from 'react-icons/fa6';
 import SingUpImg from '../../../src/assets/Picture/Service/login.jpg'
 import useAxiosPublic from '../Hooks/AxiosPublic';
 import { useContext } from 'react';
 import { AuthContext } from '../Shared/AuthProvider';
+import auth from '../utility/Firebase/Firebase.config';
+import { GoogleAuthProvider } from 'firebase/auth';
 const SingUpForm = () => {
-    const { currentUser } = useContext(AuthContext)
-    const axiosPublic = useAxiosPublic()
     const IMG_API_KEY = '95e0e6f1790d5b0a2184be49e4a99407'
     const navigate = useNavigate()
-    const handleSubmit = (e) => {
+    const { currentUser, loginWithGoogle } = useContext(AuthContext)
+    const axiosPublic = useAxiosPublic()
+    const handleLoginWithGoogle = () => {
+        loginWithGoogle(auth, GoogleAuthProvider)
+            .then(result => {
+                const user = result.user
+                console.log(user);
+                navigate('/')
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+    const handleSubmit = async e => {
         e.preventDefault()
+        // console.log('click');
         const form = e.target;
         const name = form.name.value;
-        const email = form.email.value;
         const password = form.password.value;
+        const email = form.email.value;
         const image = form.image.files[0];
-        const formData = new FormData;
-        formData.append('image', image)
+        const formData = new FormData();
+        formData.append('image', image);
+        const { data } = await axiosPublic.post(`https://api.imgbb.com/1/upload?key=${IMG_API_KEY}`, formData);
+        console.log(name, password, email);
         currentUser(email, password)
             .then(result => {
                 const user = result.user
                 console.log(user);
-                const Toast = Swal.mixin({
-                    toast: true,
-                    position: "top-end",
-                    showConfirmButton: false,
-                    timer: 3000,
-                    timerProgressBar: true,
-                    didOpen: (toast) => {
-                        toast.onmouseenter = Swal.stopTimer;
-                        toast.onmouseleave = Swal.resumeTimer;
-                    }
-                });
-                Toast.fire({
-                    icon: "success",
-                    title: "Sign Up successfully"
-                });
                 navigate('/')
+                const userDetails = {
+                    name: name,
+                    email: email,
+                    password: password,
+                    image: data.data.url,
+                };
+
+                axiosPublic.post('/users', userDetails)
+                    .then(() => {
+                        // console.log(user);
+                        const user = { email, password }
+
+                        console.log(user)
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    });
             })
             .catch(error => console.log(error))
     }
-    const handleLoginWithGoogle = () => {
-        console.log("Login with Google")
-    }
+
     return (
         <di className='flex items-center'>
             <di className='flex-1'>
