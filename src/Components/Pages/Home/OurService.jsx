@@ -20,16 +20,16 @@ const OurService = () => {
                 <div className="flex-1 md:p-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                         <div className='p-4 space-y-4 gridHover border border-black rounded-xl'>
-                            <div className=' flex items-center justify-center'>
-                                <BiLogoZoom className='bg-white p-2 text-primary w-16 h-16 rounded-full'></BiLogoZoom>
-                            </div>
-                            <h1 className='text-2xl font-bold text-center'>Live Video Consultation</h1>
-                            <p className='text-center'>Instant video consultation now or schedule a future appointment.</p>
-                            <div className='flex items-center justify-center'>
-                                <Link to='specialities'>
+                            <Link to='specialities'>
+                                <div className=' flex items-center justify-center'>
+                                    <BiLogoZoom className='bg-white p-2 text-primary w-16 h-16 rounded-full'></BiLogoZoom>
+                                </div>
+                                <h1 className='text-2xl font-bold text-center'>Live Video Consultation</h1>
+                                <p className='text-center'>Instant video consultation now or schedule a future appointment.</p>
+                                <div className='flex items-center justify-center'>
                                     <button className='  text-secondary text-base'>Read More +</button>
-                                </Link>
-                            </div>
+                                </div>
+                            </Link>
                         </div>
                         <div className='p-4 space-y-4 gridHover border border-black rounded-xl'>
                             <div className=' flex items-center justify-center'>
