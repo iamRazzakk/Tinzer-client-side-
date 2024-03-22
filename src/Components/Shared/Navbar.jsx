@@ -1,10 +1,18 @@
 import { FaHeadphones, FaPhone, FaLocationArrow } from "react-icons/fa6";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import '../utility/Navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useContext } from "react";
+import { AuthContext } from "./AuthProvider";
 
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext)
+    const navigate = useNavigate()
+    const handleLogout = () => {
+        logOut()
+        navigate('/sing-in')
+    }
     return (
         <div>
             <div className="flex justify-center items-center bg-[#07092b]">
@@ -24,19 +32,29 @@ const Navbar = () => {
                         <h3>2767 Sunrise Street, NY 1002, USA</h3>
                     </div>
                 </div>
-                <div className="flex-1">
-                    <div className="flex items-center justify-evenly gap-4 ">
-                        <FaFacebook className="bg-white rounded-full w-5 h-5"></FaFacebook>
-                        <FaTwitter className="bg-white rounded-full w-5 h-5"></FaTwitter>
-                        <FaLinkedin className="bg-white rounded-full w-5 h-5"></FaLinkedin>
-                        <Link to='/sing-in'>
-                            <button className="text-white">Sing In</button>
-                        </Link>
-                        <Link to='/sing-up'>
-                            <button className="bg-white text-[#07092b] p-2 rounded-xl text-sm font-bold">Sing Up</button>
-                        </Link>
+                {
+                    user ? <div className="flex-1 flex">
+                        <button onClick={handleLogout} className="bg-white text-[#07092b] p-2 rounded-xl text-sm font-bold">Logout</button>
+                        <ul>
+                            <Link to='dashboard/profile'>
+                                <li className=" text-white p-2 rounded-xl text-sm font-bold">Dashboard</li>
+                            </Link>
+                        </ul>
+                    </div> : <div className="flex-1">
+                        <div className="flex items-center justify-evenly gap-4 ">
+                            <FaFacebook className="bg-white rounded-full w-5 h-5"></FaFacebook>
+                            <FaTwitter className="bg-white rounded-full w-5 h-5"></FaTwitter>
+                            <FaLinkedin className="bg-white rounded-full w-5 h-5"></FaLinkedin>
+                            <Link to='/sing-in'>
+                                <button className="text-white">Sing In</button>
+                            </Link>
+                            <Link to='/sing-up'>
+                                <button className="bg-white text-[#07092b] p-2 rounded-xl text-sm font-bold">Sing Up</button>
+                            </Link>
+                        </div>
                     </div>
-                </div>
+                }
+
             </div>
 
             <nav className="navbar">

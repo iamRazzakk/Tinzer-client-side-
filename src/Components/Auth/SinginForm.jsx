@@ -68,12 +68,13 @@ export default function SingInForm() {
                       `
                     }
                 });
-
-                navigate('/')
             })
             .catch(error => {
                 console.log(error);
             })
+            .finally(() => {
+                navigate('/');
+            });
     }
     return (
         <div className="lg:flex items-center">

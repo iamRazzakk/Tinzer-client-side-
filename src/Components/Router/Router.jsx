@@ -6,6 +6,8 @@ import SingUpForm from './../Auth/SingUpForm';
 import SingInForm from "../Auth/SinginForm";
 import PricingPlan from "../Pages/Home/PricingPlan";
 import Specialities from "../Specialities";
+import Dashboard from "../Dashboard/Dashboard";
+import Profile from "../Dashboard/Profile";
 
 const myCreateRouter = createBrowserRouter(
     [
@@ -33,9 +35,22 @@ const myCreateRouter = createBrowserRouter(
                 {
                     path: '/specialities',
                     element: <Specialities></Specialities>
-                }
+                },
+                {
+                    path: 'dashboard',
+                    element: <Dashboard></Dashboard>,
+                    children: [
+                        {
+                            path: 'profile',
+                            element: <Profile></Profile>
+                        }
+
+                    ]
+                },
+
             ]
-        }
+        },
+
     ]
 )
 export default myCreateRouter;

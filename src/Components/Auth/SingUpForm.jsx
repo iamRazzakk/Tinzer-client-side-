@@ -46,6 +46,7 @@ const SingUpForm = () => {
                     email: email,
                     password: password,
                     image: data.data.url,
+                    role:'Admin'
                 };
 
                 axiosPublic.post('/users', userDetails)

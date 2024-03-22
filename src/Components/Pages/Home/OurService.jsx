@@ -32,16 +32,17 @@ const OurService = () => {
                             </Link>
                         </div>
                         <div className='p-4 space-y-4 gridHover border border-black rounded-xl'>
-                            <div className=' flex items-center justify-center'>
-                                <MdHealthAndSafety className='bg-white p-2 text-primary w-16 h-16 rounded-full'></MdHealthAndSafety>
-                            </div>
-                            <h1 className='text-2xl font-bold text-center'>Health Care Packages</h1>
-                            <p className='text-center'>Consultations, hospital care, insurance and more</p>
-                            <div className='flex items-center justify-center'>
-                                <Link to='subscription-plans'>
+                            <Link to='subscription-plans'>
+                                <div className=' flex items-center justify-center'>
+                                    <MdHealthAndSafety className='bg-white p-2 text-primary w-16 h-16 rounded-full'></MdHealthAndSafety>
+                                </div>
+                                <h1 className='text-2xl font-bold text-center'>Health Care Packages</h1>
+                                <p className='text-center'>Consultations, hospital care, insurance and more</p>
+                                <div className='flex items-center justify-center'>
+
                                     <button className='  text-secondary text-base'>Read More +</button>
-                                </Link>
-                            </div>
+                                </div>
+                            </Link>
                         </div>
                         <div className='p-4 space-y-4 gridHover border border-black rounded-xl'>
                             <div className='flex items-center justify-center'>
