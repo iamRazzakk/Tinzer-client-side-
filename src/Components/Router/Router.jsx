@@ -4,6 +4,8 @@ import Layout from "./Layout/Layout";
 import Home from "../Pages/Home/Home";
 import SingUpForm from './../Auth/SingUpForm';
 import SingInForm from "../Auth/SinginForm";
+import PricingPlan from "../Pages/Home/PricingPlan";
+import Specialities from "../Specialities";
 
 const myCreateRouter = createBrowserRouter(
     [
@@ -23,6 +25,14 @@ const myCreateRouter = createBrowserRouter(
                 {
                     path: '/sing-in',
                     element: <SingInForm></SingInForm>
+                },
+                {
+                    path: '/subscription-plans',
+                    element: <PricingPlan></PricingPlan>
+                },
+                {
+                    path: '/specialities',
+                    element: <Specialities></Specialities>
                 }
             ]
         }

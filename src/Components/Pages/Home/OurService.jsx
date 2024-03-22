@@ -1,5 +1,10 @@
 import ServiceImage from '../../../assets/Picture/woman.jpg'
 import '../../utility/About.css'
+import { BiLogoZoom } from "react-icons/bi";
+import { MdHealthAndSafety } from "react-icons/md";
+import { FaTruckMedical } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+
 const OurService = () => {
     return (
         <div className="bg-[#07092B] text-white">
@@ -15,28 +20,32 @@ const OurService = () => {
                 <div className="flex-1 md:p-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                         <div className='p-4 space-y-4 gridHover border border-black rounded-xl'>
-                            <div className='flex items-center justify-center'>
-                                <img className='w-16  h-16 rounded-full object-cover' src="https://us.123rf.com/450wm/get4net/get4net2312/get4net231200265/219192887-injection-applied-to-a-woman-for-face-surgery.jpg?ver=6" alt="Dermatology Logo" />
+                            <div className=' flex items-center justify-center'>
+                                <BiLogoZoom className='bg-white p-2 text-primary w-16 h-16 rounded-full'></BiLogoZoom>
                             </div>
-                            <h1 className='text-2xl font-bold text-center'>Dermatology</h1>
-                            <p className='text-center'>Dermatology specializes in diagnosing and treating skin conditions, promoting skin health and overall well-being.</p>
+                            <h1 className='text-2xl font-bold text-center'>Live Video Consultation</h1>
+                            <p className='text-center'>Instant video consultation now or schedule a future appointment.</p>
                             <div className='flex items-center justify-center'>
-                                <button className='  text-secondary text-base'>Read More +</button>
+                                <Link to='specialities'>
+                                    <button className='  text-secondary text-base'>Read More +</button>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className='p-4 space-y-4 gridHover border border-black rounded-xl'>
+                            <div className=' flex items-center justify-center'>
+                                <MdHealthAndSafety className='bg-white p-2 text-primary w-16 h-16 rounded-full'></MdHealthAndSafety>
+                            </div>
+                            <h1 className='text-2xl font-bold text-center'>Health Care Packages</h1>
+                            <p className='text-center'>Consultations, hospital care, insurance and more</p>
+                            <div className='flex items-center justify-center'>
+                                <Link to='subscription-plans'>
+                                    <button className='  text-secondary text-base'>Read More +</button>
+                                </Link>
                             </div>
                         </div>
                         <div className='p-4 space-y-4 gridHover border border-black rounded-xl'>
                             <div className='flex items-center justify-center'>
-                                <img className='w-16  h-16 rounded-full object-cover' src="https://w7.pngwing.com/pngs/363/476/png-transparent-mental-disorder-mental-health-health-care-health-psychology-silhouette-medical-care.png" alt="Mental Health Logo" />
-                            </div>
-                            <h1 className='text-2xl font-bold text-center'>Mental Health</h1>
-                            <p className='text-center'>Our mental health services offer support and treatment for emotional well-being, fostering resilience and holistic healing.</p>
-                            <div className='flex items-center justify-center'>
-                                <button className='  text-secondary text-base'>Read More +</button>
-                            </div>
-                        </div>
-                        <div className='p-4 space-y-4 gridHover border border-black rounded-xl'>
-                            <div className='flex items-center justify-center'>
-                                <img className='w-16  h-16 rounded-full object-cover' src="https://www.clipartmax.com/png/middle/190-1901603_orthopedic-surgeon-bone.png" alt="Orthopedics Logo" />
+                                <FaTruckMedical className='bg-white p-2 text-primary w-16 h-16 rounded-full'></FaTruckMedical>
                             </div>
                             <h1 className='text-2xl font-bold text-center'>Orthopedics</h1>
                             <p className='text-center'>Orthopedics focuses on musculoskeletal health, providing care for bones, joints, and muscles to enhance mobility and function.</p>
