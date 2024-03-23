@@ -88,18 +88,11 @@ export default function SingInForm() {
                 <form onSubmit={handleLogin} className="card-body lg:p-10 lg:space-y-6">
                     < div className="form-control" >
 
-                        <input type="text" name="name" placeholder="Enter your Name" className="input input-bordered bg-white " required />
-                    </div >
-                    < div className="form-control" >
-
                         <input type="email" name="email" placeholder="Enter your email" className="input input-bordered bg-white " required />
                     </div >
                     <div className="form-control">
 
                         <input type="password" name="password" placeholder="Enter your password" className="input input-bordered bg-white " required />
-                    </div>
-                    <div className="form-control">
-                        <input className="input input-bordered bg-white " type="file" name="image" id="" />
                     </div>
                     <div className="form-control mt-6">
                         <button className="bg-[#3d90e9] text-white py-3 rounded-full button">Login</button>

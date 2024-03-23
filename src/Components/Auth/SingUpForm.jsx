@@ -1,5 +1,5 @@
 
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from 'react-icons/fa6';
 import SingUpImg from '../../../src/assets/Picture/Service/login.jpg'
@@ -46,7 +46,7 @@ const SingUpForm = () => {
                     email: email,
                     password: password,
                     image: data.data.url,
-                    role:'Admin'
+                    role: 'user'
                 };
 
                 axiosPublic.post('/users', userDetails)
@@ -92,7 +92,7 @@ const SingUpForm = () => {
                     <div className="form-control mt-6">
                         <button className="bg-[#3d90e9] text-white py-3 rounded-full button">Sing Up</button>
                     </div>
-                    <h1 className="text-center text-white font-bold">All ready have an account<Link className="text-blue-500" to={'/sing-in'}> Login</Link></h1>
+                    <h1 className="text-center text-white font-bold">All ready have an account<NavLink className="text-blue-500" to={'/sing-in'}> Login</NavLink></h1>
                     <hr className="bg-black" />
                     <p className="text-2xl flex gap-4 mx-auto cursor-pointer"><FcGoogle onClick={handleLoginWithGoogle} className="cursor-pointer"></FcGoogle> <FaGithub className="bg-black rounded-full"></FaGithub></p>
                 </form >
