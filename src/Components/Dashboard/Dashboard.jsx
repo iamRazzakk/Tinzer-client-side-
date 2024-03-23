@@ -22,10 +22,9 @@ const Dashboard = () => {
     }, [users, user]);
 
     if (isLoading) {
-        return <div>Loading...</div>; // You can add a loading indicator here
+        return <div>Loading...</div>; 
     }
 
-    // Render nothing if currentUser is still null
     if (!currentUser) {
         return null;
     }
@@ -41,6 +40,7 @@ const Dashboard = () => {
                         <>
                             <li className="md:mb-4"><NavLink to='/dashboard/profile'>Admin Profile</NavLink></li>
                             <li className="md:mb-4"><NavLink to='/dashboard/admin-dashboard'>Admin Dashboard</NavLink></li>
+                            <li className="md:mb-4"><NavLink to='/dashboard/users'>All User</NavLink></li>
                             {/* Add other admin-specific menu items */}
                         </>
                     }

@@ -8,6 +8,7 @@ import PricingPlan from "../Pages/Home/PricingPlan";
 import Specialities from "../Specialities";
 import Dashboard from "../Dashboard/Dashboard";
 import Profile from "../Dashboard/Profile";
+import AllUsers from "../Dashboard/AllUsers";
 
 const myCreateRouter = createBrowserRouter(
     [
@@ -43,6 +44,10 @@ const myCreateRouter = createBrowserRouter(
                         {
                             path: 'profile',
                             element: <Profile></Profile>
+                        },
+                        {
+                            path: 'users',
+                            element: <AllUsers></AllUsers>
                         }
 
                     ]
