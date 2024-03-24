@@ -9,6 +9,7 @@ import Specialities from "../Specialities";
 import Dashboard from "../Dashboard/Dashboard";
 import Profile from "../Dashboard/Profile";
 import AllUsers from "../Dashboard/AllUsers";
+import AppointMent from "../AppointMent";
 
 const myCreateRouter = createBrowserRouter(
     [
@@ -36,6 +37,10 @@ const myCreateRouter = createBrowserRouter(
                 {
                     path: '/specialities',
                     element: <Specialities></Specialities>
+                },
+                {
+                    path:'/booking',
+                    element:<AppointMent></AppointMent>
                 },
                 {
                     path: 'dashboard',

@@ -94,7 +94,9 @@ const AllUsers = () => {
                                 <td className="border px-4 py-2">{user?.email}</td>
                                 <td className="border px-4 py-2 flex justify-center items-center">
                                     {user?.role === "doctor" ? (
-                                        <FaUserDoctor />
+                                        <button className="btn bg-none text-primary lg:text-2xl py-2 ml-2">
+                                            <FaUserDoctor />
+                                        </button>
                                     ) : (
                                         <button onClick={() => handleMakeDoctor(user?.email)} className="btn bg-none text-secondary lg:text-2xl py-2 ml-2">
                                             <FaUser />

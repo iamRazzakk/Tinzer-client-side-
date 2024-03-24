@@ -78,7 +78,9 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex-1">
-                        <button>Book Appointment</button>
+                        <Link to='/booking'>
+                            <button>Book Appointment</button>
+                        </Link>
                     </div>
                 </div>
             </nav>

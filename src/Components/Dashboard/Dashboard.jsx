@@ -22,7 +22,7 @@ const Dashboard = () => {
     }, [users, user]);
 
     if (isLoading) {
-        return <div>Loading...</div>; 
+        return <div>Loading...</div>;
     }
 
     if (!currentUser) {
@@ -48,8 +48,15 @@ const Dashboard = () => {
                     {currentUser?.role === "user" &&
                         <>
                             <li className="md:mb-4"><NavLink to='/dashboard/profile'>User Profile</NavLink></li>
-                            {/* <li className="md:mb-4"><NavLink to='/dashboard/user-dashboard'>User Dashboard</NavLink></li> */}
+                            
                             {/* Add other user-specific menu items */}
+                        </>
+                    }
+                    {currentUser?.role === "doctor" &&
+                        <>
+                            <li className="md:mb-4"><NavLink to='/dashboard/profile'>User Profile</NavLink></li>
+                            <li className="md:mb-4"><NavLink to='/dashboard/client'>Client</NavLink></li>
+                            {/* Add appointment */}
                         </>
                     }
                 </ul>
