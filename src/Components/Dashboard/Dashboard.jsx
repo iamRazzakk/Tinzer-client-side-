@@ -58,7 +58,6 @@ const Dashboard = () => {
                         </>
                     }
                 </ul>
-
             </div>
             <div className="flex-1">
                 <Outlet />
