@@ -25,7 +25,7 @@ const Physician = () => {
             <div className="flex-1">
                 <div className="lg:mt-10 text-white">
                     <a className="flex flex-col items-center bg-white border border-primary rounded-lg shadow md:flex-row   dark:border-secondary dark:bg-primary lg:h-[194px] w-full  ">
-                        <img className="flex-1" src={physician?.image} alt="" />
+                        <img className="flex-1 w-20 p-10  h-full object-cover" src={physician?.image} alt="" />
                         <div className="flex  flex-col justify-between p-4 leading-normal">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{physician?.doctor_name}</h5>
                             <p className="mb-3 font-normal dark:text-white">{physician?.title}</p>

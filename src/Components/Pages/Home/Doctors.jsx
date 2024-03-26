@@ -43,6 +43,16 @@ const Doctors = () => {
                         <a href='https://www.linkedin.com/in/razzak392/' target='_blank'><FaLinkedin className='linkedin'></FaLinkedin></a>
                     </div>
                 </div>
+                <div className='img-container '>
+                    <img src={doctor2} alt="" />
+                    <h1 className='text-2xl font-bold'>Dr. James Adult</h1>
+                    <p className='text-secondary'>Cardiologist</p>
+                    <div className='flex items-center justify-center gap-6 text-3xl icons'>
+                        <a href='https://www.facebook.com/profile.php?id=100089884363943' target='_blank'> <FaFacebook className='facebook'></FaFacebook></a>
+                        <a href='https://twitter.com/rakibt23p' target='_blank'> <FaTwitter className='twitter'></FaTwitter></a>
+                        <a href='https://www.linkedin.com/in/razzak392/' target='_blank'><FaLinkedin className='linkedin'></FaLinkedin></a>
+                    </div>
+                </div>
             </div>
 
         </div>

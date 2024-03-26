@@ -18,3 +18,10 @@
     width: 600px;
     background-repeat: no-repeat;
 }
+
+.FaPlayCircle:hover {
+    color: #207EF7;
+    background-color: #07092B;
+    border-color: #207EF7;
+    border-radius: 50%;
+}
