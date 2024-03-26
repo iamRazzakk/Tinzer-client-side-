@@ -10,6 +10,12 @@ import Dashboard from "../Dashboard/Dashboard";
 import Profile from "../Dashboard/Profile";
 import AllUsers from "../Dashboard/AllUsers";
 import AppointMent from "../AppointMent";
+import Physician from "../SpecialitiesDoctors/Physician";
+import GynaeAndObs from "../SpecialitiesDoctors/GynaeAndObs";
+import Dermatology from "../SpecialitiesDoctors/Dermatology";
+import InternalMedicine from "../SpecialitiesDoctors/InternalMedicine";
+import Gastroenterology from "../SpecialitiesDoctors/Gastroenterology";
+import Psychiatry from "../SpecialitiesDoctors/Psychiatry";
 
 const myCreateRouter = createBrowserRouter(
     [
@@ -39,11 +45,39 @@ const myCreateRouter = createBrowserRouter(
                     element: <Specialities></Specialities>
                 },
                 {
-                    path:'/booking',
-                    element:<AppointMent></AppointMent>
+                    path: '/booking',
+                    element: <AppointMent></AppointMent>
                 },
                 {
-                    path: 'dashboard',
+                    path: 'physician',
+                    element: <Physician></Physician>
+                },
+                {
+                    path: '/gynae-and-obs',
+                    element: <GynaeAndObs></GynaeAndObs>
+                },
+                {
+                    path: '/dermatology',
+                    element: <Dermatology></Dermatology>
+                },
+                {
+                    path: '/internal-medicine',
+                    element: <InternalMedicine></InternalMedicine>
+                },
+                {
+                    path: '/gastroenterology',
+                    element: <Gastroenterology></Gastroenterology>
+                },
+                {
+                    path: '/psychiatry',
+                    element: <Psychiatry></Psychiatry>
+                },
+                {
+                    path: '/psychology',
+                    element: <Physician></Physician>
+                },
+                {
+                    path: '/dashboard',
                     element: <Dashboard></Dashboard>,
                     children: [
                         {
