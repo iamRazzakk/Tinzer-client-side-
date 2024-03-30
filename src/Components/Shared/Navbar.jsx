@@ -72,8 +72,8 @@ const Navbar = () => {
                 </div>
                 <div className="flex-1 lg:flex items-center justify-center">
                     <ul className="nav-menu">
-                        <li className="bg-primary text-white px-4 py-2 rounded nav-item"><Link>Home</Link></li>
-                        <li className="bg-primary text-white px-4 py-2 rounded nav-item dropdown">
+                        <li className=" text-primary px-4 py-2 rounded nav-item"><Link>Home</Link></li>
+                        <li className=" text-primary px-4 py-2 rounded nav-item dropdown">
                             <Link onClick={toggleDropdown}>Service</Link>
                             <div className={`dropdown-content ${dropdownActive ? 'active' : ''}`}>
                                 <Link to={'specialities'}>Live Consultation</Link>
@@ -81,8 +81,8 @@ const Navbar = () => {
                                 <Link>Service 3</Link>
                             </div>
                         </li>
-                        <li className="bg-primary text-white px-4 py-2 rounded nav-item"><Link>About</Link></li>
-                        <li className="bg-primary text-white px-4 py-2 rounded nav-item"><Link>Contact</Link></li>
+                        <li className=" text-primary px-4 py-2 rounded nav-item"><Link>About</Link></li>
+                        <li className=" text-primary px-4 py-2 rounded nav-item"><Link>Contact</Link></li>
                         <Link to='/booking'>
                             <button className="bg-secondary text-white px-4 py-2 rounded">Book Appointment</button>
                         </Link>

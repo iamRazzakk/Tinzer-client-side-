@@ -94,7 +94,7 @@ const Header = () => {
                         <div className="flex-1">
                             <img className='relative h-[80vh] rounded-2xl md:pt-10' src={image3} alt="" />
                             <div className="flex items-center justify-evenly absolute text-white">
-                                <div className=' md:-mt-24 rounded-lg bg-[#191919] w-52 h-36'>
+                                {/* <div className=' md:-mt-24 rounded-lg bg-[#191919] w-52 h-36'>
                                     <div className=' lg:mb-6 w-28 h-28 '>
                                         <FaHeadset className='flex bg-[#2490eb] rounded-full text-white p-1 items-center text-3xl text-center lg:ml-20 justify-center'></FaHeadset>
                                     </div>
@@ -102,10 +102,10 @@ const Header = () => {
                                         <h1 className="text-xl font-bold">24/7 Support</h1>
                                         <p>There are many variations of passages are valid</p>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 {/* Qulified Doctor */}
-                                <div className=' md:-mt-24 rounded-lg bg-[#191919] w-52 h-32'>
+                                {/* <div className=' md:-mt-24 rounded-lg bg-[#191919] w-52 h-32'>
                                     <div className=' lg:mb-6 w-28 h-28 '>
                                         <FaHeadset className='flex bg-[#2490eb] rounded-full text-white p-1 items-center text-3xl text-center lg:ml-20 justify-center'></FaHeadset>
                                     </div>
@@ -113,7 +113,7 @@ const Header = () => {
                                         <h1 className="text-xl font-bold">24/7 Support</h1>
                                         <p>There are many variations of passages are valid</p>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

@@ -16,6 +16,7 @@ import Dermatology from "../SpecialitiesDoctors/Dermatology";
 import InternalMedicine from "../SpecialitiesDoctors/InternalMedicine";
 import Gastroenterology from "../SpecialitiesDoctors/Gastroenterology";
 import Psychiatry from "../SpecialitiesDoctors/Psychiatry";
+import DoctorBooking from "../DoctorBooking/DoctorBooking";
 
 const myCreateRouter = createBrowserRouter(
     [
@@ -75,6 +76,10 @@ const myCreateRouter = createBrowserRouter(
                 {
                     path: '/psychology',
                     element: <Physician></Physician>
+                },
+                {
+                    path: '/book-now',
+                    element: <DoctorBooking></DoctorBooking>
                 },
                 {
                     path: '/dashboard',

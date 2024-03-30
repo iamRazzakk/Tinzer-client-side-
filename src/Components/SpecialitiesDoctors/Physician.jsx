@@ -33,8 +33,8 @@ const Physician = () => {
                         </div>
                         <div className="flex-1">
                             <p className="mb-3 font-normal dark:text-white">Price: {physician?.price}</p>
-                            <Link>
-                                Book now:<MdLaptopChromebook className="text-2xl"> </MdLaptopChromebook>
+                            <Link to="/book-now" className="tooltip lg:mt-10 tooltip-open tooltip-accent" data-tip="Book now">
+                                <MdLaptopChromebook className="text-2xl" />
                             </Link>
                         </div>
                     </a>

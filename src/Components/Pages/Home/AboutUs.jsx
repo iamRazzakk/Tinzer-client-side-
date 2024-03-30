@@ -35,11 +35,11 @@ const AboutUs = () => {
         };
     }, []);
     return (
-        <div className="md:flex bg-black  justify-center">
+        <div className="md:flex bg-black  justify-center lg:mt-32 lg:p-5">
             <div className='flex-1 '>
 
                 <div className='p-6 lg:mt-4'>
-                    <img className='relative min-h-full w-full rounded' src={image} alt="" />
+                    <img className='relative h-full w-full object-cover rounded' src={image} alt="" />
                 </div>
                 <FaPlayCircle onClick={openVideo} className='FaPlayCircle border border-white absolute lg:ml-64 rounded-full  lg:-mt-80 text-7xl font-bold bg-white'></FaPlayCircle>
                 {/* Open the modal using document.getElementById('ID').showModal() method */}

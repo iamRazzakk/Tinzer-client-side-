@@ -27,7 +27,7 @@ const ChooseUs = () => {
 
             <div className="lg:flex items-center justify-center ">
                 <div className="flex-1 lg:p-10 space-y-4 text-white">
-                    <h6 className="text-primary">Why Choose us</h6>
+                    <h6 className="text-white">Why Choose us</h6>
                     <h3 className="text-4xl font-bold ">
                         Owr Best Services & Quite Popular Online Treatment
                     </h3>
